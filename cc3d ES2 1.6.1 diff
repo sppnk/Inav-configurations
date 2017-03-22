@@ -1,0 +1,44 @@
+# diff
+# INAV/CC3D_PPM1 1.6.1 Mar  9 2017 / 00:36:06 (6c878ae)
+mixer AIRPLANE
+feature VBAT
+feature GPS
+feature TELEMETRY
+feature CURRENT_METER
+feature BLACKBOX
+feature PWM_OUTPUT_ENABLE
+serial 0 1 9600 38400 0 115200
+serial 2 2 115200 38400 0 115200
+aux 0 0 0 1700 2100
+aux 1 1 0 900 2100
+aux 2 20 0 900 2100
+aux 3 23 0 900 2100
+aux 4 3 3 1700 2100
+aux 5 8 1 1700 2100
+set gyro_sync = ON
+set gyro_hardware_lpf = 188HZ
+set acc_hardware = MPU6000
+set acczero_x = -33
+set acczero_y = 19
+set acczero_z = -52
+set accgain_x = 4115
+set accgain_y = 4083
+set accgain_z = 4055
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rssi_channel = 7
+set failsafe_procedure = RTH
+set multiwii_current_meter_output = ON
+profile 1
+
+set fw_i_pitch = 30
+set fw_ff_pitch = 15
+set fw_p_roll = 20
+set fw_i_roll = 30
+set fw_ff_roll = 15
+set fw_p_yaw = 45
+set fw_i_yaw = 5
+set fw_ff_yaw = 15
+set pitch_rate = 15
+set yaw_rate = 9
+
