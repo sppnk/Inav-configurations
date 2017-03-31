@@ -1,0 +1,65 @@
+
+# diff
+# INAV/CC3D 1.6.1 Mar  9 2017 / 00:35:20 (6c878ae)
+mixer CUSTOMAIRPLANE
+mmix 0  1.000  0.000  0.000  0.000
+servo 2 1000 2000 1500 90 90 -100 -1
+smix 0 3 0 -100 0 0 100
+smix 1 4 0 -100 0 0 100
+smix 2 2 1 100 0 0 100
+smix 3 5 1 100 0 0 100
+smix 4 2 2 100 0 0 100
+smix 5 5 2 -100 0 0 100
+feature VBAT
+feature MOTOR_STOP
+feature GPS
+feature TELEMETRY
+feature CURRENT_METER
+feature PWM_OUTPUT_ENABLE
+serial 0 1 9600 38400 9600 115200
+serial 2 2 115200 57600 0 115200
+aux 0 1 0 900 2100
+aux 1 20 0 900 2100
+aux 2 23 0 900 2100
+aux 3 3 3 1300 1675
+aux 4 8 1 1625 2100
+aux 5 25 0 1750 2100
+set gyro_sync = ON
+set gyro_hardware_lpf = 188HZ
+set acc_hardware = MPU6000
+set acczero_x = -3
+set acczero_y = 30
+set acczero_z = -137
+set accgain_x = 4078
+set accgain_y = 4105
+set accgain_z = 4037
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rssi_channel = 7
+set max_throttle = 2000
+set failsafe_procedure = RTH
+set failsafe_stick_threshold = 0
+set align_board_roll = -18
+set align_board_pitch = 15
+set vbat_scale = 101
+set current_meter_scale = 1500
+set current_meter_offset = 33
+set multiwii_current_meter_output = ON
+set servo_lpf_hz = 0
+set fixed_wing_auto_arm = ON
+set disarm_kill_switch = OFF
+set nav_extra_arming_safety = OFF
+set nav_fw_launch_thr = 1950
+set nav_fw_launch_timeout = 10
+set nav_fw_launch_climb_angle = 25
+profile 1
+
+set fw_p_pitch = 5
+set fw_i_pitch = 10
+set fw_ff_pitch = 60
+set fw_p_roll = 15
+set fw_ff_roll = 50
+set roll_rate = 15
+set pitch_rate = 10
+set yaw_rate = 9
+

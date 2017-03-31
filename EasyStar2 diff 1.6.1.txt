@@ -1,0 +1,56 @@
+
+# diff
+# INAV/CC3D_PPM1 1.6.1 Mar  9 2017 / 00:36:06 (6c878ae)
+mixer AIRPLANE
+servo 2 1000 2000 1500 90 90 -100 -1
+servo 3 1000 2000 1500 90 90 -100 -1
+servo 5 1000 2000 1500 90 90 -100 -1
+feature VBAT
+feature MOTOR_STOP
+feature GPS
+feature TELEMETRY
+feature CURRENT_METER
+feature BLACKBOX
+feature PWM_OUTPUT_ENABLE
+serial 0 1 9600 38400 9600 115200
+serial 2 2 115200 38400 0 115200
+aux 1 1 0 900 1700
+aux 2 20 0 900 2100
+aux 3 23 0 900 2100
+aux 4 3 3 1700 2100
+aux 5 8 1 1700 2100
+aux 6 10 0 1725 2100
+set gyro_sync = ON
+set gyro_hardware_lpf = 188HZ
+set acc_hardware = MPU6000
+set acczero_x = -33
+set acczero_y = 19
+set acczero_z = -52
+set accgain_x = 4115
+set accgain_y = 4083
+set accgain_z = 4055
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rssi_channel = 7
+set failsafe_procedure = RTH
+set align_board_pitch = 32
+set vbat_scale = 103
+set current_meter_scale = 6000
+set current_meter_offset = 5
+set multiwii_current_meter_output = ON
+set fixed_wing_auto_arm = ON
+set nav_extra_arming_safety = OFF
+profile 1
+
+set fw_p_pitch = 5
+set fw_i_pitch = 30
+set fw_ff_pitch = 55
+set fw_p_roll = 5
+set fw_i_roll = 30
+set fw_ff_roll = 55
+set fw_p_yaw = 45
+set fw_i_yaw = 5
+set fw_ff_yaw = 15
+set pitch_rate = 15
+set yaw_rate = 9
+

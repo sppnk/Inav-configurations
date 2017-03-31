@@ -1,0 +1,44 @@
+# diff
+# diff
+# INAV/NAZE 1.6.0 Feb  5 2017 / 11:17:59 (dcc163f)
+mixer AIRPLANE
+servo 3 1000 2000 1500 90 90 -100 -1
+servo 4 1000 2000 1500 90 90 -100 -1
+feature -VBAT
+feature MOTOR_STOP
+feature GPS
+feature TELEMETRY
+feature PWM_OUTPUT_ENABLE
+map AETR1234
+serial 0 17 9600 38400 9600 115200
+serial 1 2 115200 38400 0 115200
+aux 0 1 0 900 2100
+aux 1 20 0 900 2100
+aux 2 23 0 900 2100
+aux 3 3 3 1700 2100
+aux 4 8 1 1400 2100
+aux 5 14 0 900 2100
+set gyro_sync = ON
+set gyro_hardware_lpf = 188HZ
+set acc_hardware = MPU6050
+set acczero_x = 99
+set acczero_y = 23
+set acczero_z = -242
+set accgain_x = 4089
+set accgain_y = 4060
+set accgain_z = 4031
+set mag_hardware = NONE
+set baro_hardware = BMP280
+set rssi_channel = 7
+set failsafe_procedure = RTH
+set align_board_roll = 60
+set align_board_pitch = -27
+set align_board_yaw = 1799
+set fixed_wing_auto_arm = ON
+set disarm_kill_switch = OFF
+set nav_extra_arming_safety = OFF
+set nav_fw_launch_timeout = 10
+set nav_fw_launch_climb_angle = 30
+profile 1
+
+
